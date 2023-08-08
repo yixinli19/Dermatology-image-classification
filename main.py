@@ -426,9 +426,9 @@ if __name__ == '__main__':
         exp_logger.print("="*50+'\n')
 
         if args.device == "cuda":
-            model = torch.load('./saved_model/ncsu_csc_model.pkl')
+            model = torch.load(args.final_model)
         else:
-            model = torch.load('./saved_model/ncsu_csc_model.pkl', map_location=torch.device('cpu'))
+            model = torch.load(args.final_model, map_location=torch.device('cpu'))
         model.to(args.device)
 
         confusion_matrix = torch.zeros(4, 6, 6)

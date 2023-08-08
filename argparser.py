@@ -25,6 +25,7 @@ def args_parser():
 
     # Testing parameters
     parser.add_argument('--final', default='false')
+    parser.add_argument('--final_model', default='./saved_model/ncsu_csc_model.pkl')
     parser.add_argument('--testing_data_path', default="./TestingSet/")
     parser.add_argument('--batch', type=int, default=32, help="final batch size of testing set")
 
