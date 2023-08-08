@@ -31,3 +31,7 @@ If you want to test the trained model with a testing set,
 ```
 python main.py --final true --final_model <path-to-model> --testing_data_path <testing-path> --batch 32
 ```
+
+## Contact
+If you encounter any issue running the program, please contact Yixin Li (yli223@ncsu.edu)
+
